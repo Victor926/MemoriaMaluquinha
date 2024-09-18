@@ -7,22 +7,12 @@
     --cor_4: #26DB17;
 }
 
-
-
-.rosa {
-    color: var(--cor_5);
+button {
+    height: 75px !important;
+    width: 225px;
 }
 
-.laranja {
-    color: var(--cor_6);
-}
-
-.azul {
-    color: var(--cor_2);
-}
-
-.verde {
+.logo_principal{
     color: var(--cor_4);
+    padding-top: 100px;
 }
-
-

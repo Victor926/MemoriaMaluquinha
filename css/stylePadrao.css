@@ -1,0 +1,69 @@
+:root {
+    --cor_1: #E0E1E2;
+    --cor_2: #2416BF;
+    --cor_3: #4D9DE0;
+    --cor_5: #FC1B62;
+    --cor_6: #FF6B00;
+    --cor_4: #26DB17;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: 0;
+    background: linear-gradient(135deg, var(--cor_3), var(--cor_2));
+    font-family: fredoka;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.botao{
+    height: 100px;
+    width: 250px;
+    border-radius: 70px;
+    border: 3px solid var(--cor_1);
+    background-color: var(--cor_5);
+    color: var(--cor_1);
+    font-size: 36px;
+    font-weight: bolder;
+    transition: 0.2s;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5);
+}
+.botao:hover{
+    background-color: var(--cor_2);
+    cursor: pointer;
+}
+
+.containerPrincipal{
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    position: center;
+}
+
+.container_botoes {
+    display:flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.logo_principal {
+    font-size: 105px;
+    justify-content: center;
+    text-align: center;
+    text-shadow:
+        3px 3px 0 var(--cor_1),
+        -3px -3px 0 var(--cor_1),
+        3px -3px 0 var(--cor_1),
+        -3px 3px 0 var(--cor_1),
+        5px 5px 15px rgba(0, 0, 0, 0.7);
+}

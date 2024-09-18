@@ -1,8 +1,5 @@
 $(document).ready(function () {
-    $("#novo_jogo").click(function(){
-        window.location.href = "";
-    });
-    $("#continuar_jogo").click(function(){
-        window.location.href = "";
+    $("#botaoJogar").click(function(){
+        window.location.href = "escolherTema.html";
     });
 });
