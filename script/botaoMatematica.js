@@ -1,11 +1,12 @@
 $(document).ready(function () {
+
     var primeiro = null;
     var segundo = null;
     var contagem = 0;
 
     
     $(".ativado").click(function(){
-        if(primeiro === $(this)){
+        if(primeiro && $(primeiro).is($(this))){
             return;
         }
         if(primeiro === null)
@@ -32,6 +33,7 @@ $(document).ready(function () {
             setTimeout(function() {
                 $(primeiro).toggleClass("rotate3d");
                 $(segundo).toggleClass("rotate3d");
+                $(primeiro).on('click');
                 primeiro = null;
                 segundo = null;
             }, 1000); 
