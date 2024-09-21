@@ -3,9 +3,13 @@ $(document).ready(function () {
     var primeiro = null;
     var segundo = null;
     var contagem = 0;
-
+    var aux1;
+    var aux2;
     
     $(".ativado").click(function(){
+        if(aux1){
+            return;
+        }
         if(primeiro && $(primeiro).is($(this))){
             return;
         }
@@ -30,12 +34,15 @@ $(document).ready(function () {
             segundo = null;
         }
         else{
+            aux1 = primeiro;
+            aux2 = segundo;
+            primeiro = null;
+            segundo = null;
             setTimeout(function() {
-                $(primeiro).toggleClass("rotate3d");
-                $(segundo).toggleClass("rotate3d");
-                $(primeiro).on('click');
-                primeiro = null;
-                segundo = null;
+                $(aux1).toggleClass("rotate3d");
+                $(aux2).toggleClass("rotate3d");
+                aux1 = null;
+                aux2 = null;
             }, 1000); 
         }
         
