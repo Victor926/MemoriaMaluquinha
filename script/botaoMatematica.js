@@ -48,6 +48,20 @@ $(document).ready(function () {
         
     });
 
-    
+    $(".opc").click(function(){
+        if($(this).data("id") === 1){
+            $('#clickSound').attr('src', "audios/som1.mp3")[0].play();
+        }
+        if($(this).data("id") === 2){
+            $('#clickSound').attr('src', "audios/som2.mp3")[0].play();
+        }
+        if($(this).data("id") === 3){
+            $('#clickSound').attr('src', "audios/som3.mp3")[0].play();
+        }
+        if($(this).data("id") === 4){
+            $('#clickSound').attr('src', "audios/som4.mp3")[0].play();
+        }
+
+    })
 
 });
